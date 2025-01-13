@@ -50,7 +50,7 @@ import Sidebar from './navigation/sidebar.jsx';
 const App = () => {
   return (
   
-    <BrowserRouter basename='{process.env.PUBLIC_URL}'>
+    <Router>
       <div style={{ display: "flex" }}>
         <Sidebar />
         <div style={{ marginLeft: "250px", flex: 1, padding: "1rem" }}>
@@ -64,7 +64,7 @@ const App = () => {
           </Routes>
         </div>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 };
 
